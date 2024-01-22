@@ -1,0 +1,48 @@
+/* Card.scss */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+
+  /* Font color based on light or dark mode */
+  color: var(--color-dark);
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text inside the container */
+
+  .info {
+    h3 {
+      margin: 0;
+      font-size: 1.5rem; /* Adjust font size as needed *
+      /* Font color based on light or dark mode */
+      color: var(--color-dark);
+    }
+  }
+}
+
+.button-container {
+  margin-top: 10px; /* Adjust margin as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+button.custom-button {
+  padding: 10px 20px;
+  background-color: var(--color-primary); /* Use CSS variable for background color */
+  color: var(--color-white); /* Use CSS variable for text color */
+  border: none;
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+  font-size: 1rem; /* Adjust font size as needed */
+}

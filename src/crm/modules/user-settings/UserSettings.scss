@@ -1,0 +1,103 @@
+/* UserSettings.scss */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+// :root {
+//   --color-primary: #6C9BCF;
+//   --color-danger: #80636e;
+//   --color-success: #1B9C85;
+//   --color-warning: #F7D060;
+//   --color-white: #fff;
+//   --color-info-dark: #7d8da1;
+//   --color-dark: #363949;
+//   --color-light: rgba(132, 139, 200, 0.18);
+//   --color-dark-variant: #677483;
+//   --color-background: #f6f6f9;
+
+//   // --card-border-radius: 2rem;
+//   --border-radius-1: 0.4rem;
+//   --border-radius-2: 1.2rem;
+
+//   --card-padding: 1.8rem;
+//   --padding-1: 1.2rem;
+
+//   --box-shadow: 0 2rem 3rem var(--color-light);
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode-variables {
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.user-settings {
+  max-width: 600px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.settings-section {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-dark); /* Adjust label color */
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: var(--color-white); /* Adjust input background color */
+    color: var(--color-dark); /* Adjust input text color */
+    border: 1px solid var(--color-border);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Dark Mode Styles */
+.user-settings.dark-mode {
+  background-color: var(--color-background);
+  color: var(--color-light);
+
+  .input-group label {
+    color: var(--color-light);
+  }
+
+  input {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: 1px solid var(--color-dark-variant);
+  }
+
+  button {
+    background-color: var(--color-primary);
+  }
+}

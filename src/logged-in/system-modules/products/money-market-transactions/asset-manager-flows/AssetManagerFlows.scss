@@ -1,0 +1,12 @@
+table {
+    color: var(--color-text);
+
+    thead {
+        background-color: var(--card-background-color);
+
+        th {
+            color: var(--color-text) !important;
+        }
+
+    }
+}

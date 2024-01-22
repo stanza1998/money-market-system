@@ -1,0 +1,147 @@
+var dd = {
+	content: [
+	   {
+			columns: [
+			{
+			image: 'sampleImage.jpg',
+			fit: [100, 100],
+		
+		},
+				{
+				  
+					width: '*',
+					text: '4th Floor,1@Steps \n C/O Grove and Chasie Street \n  Kleine Kuppe, Windhoek. ',
+					 style: 'greyText'
+				},
+				{
+					width: '*',
+					text: 'P O Box 186 \n Windhoek \n Namibia.',
+					 style: 'greyText'
+				},
+				{
+					width: '*',
+					text: 'Tel: +264 (81)9583500 \n Fax: +264 (61) 304 671 \n www.ijg.net',
+					 style: 'greyText'
+				}
+			]
+		},
+		{text: 'Prescient IJG Unit Trust Management Company\n P O Box 186 \n Windhoek\nNamibia' , style: 'header' },
+		
+		'Attention: Brent Petersen\nFax: +264 61 304 671',
+		
+		{text: '9/25/2023 ,', style: 'subheader'},
+		'Dear Brent,',
+		{text: 'REDEMPTION REQUEST', style: 'subheader'},
+		{
+			style: 'tableExample',
+			table: {
+			     widths: ['50%', '50%'], // Adjust the widths as needed (e.g., 50% for each column)
+				body: [
+				  [{ text: 'Client Number', bold: true }, '3569'],
+					[{text:'Entity Name', bold: true }, 'IJG Money Market Nominee (Pty) Ltd'],
+					[{text:'Registered Number', bold: true }, '2018/2985'],
+					[{text:'From Unit Trust Fund', bold: true }, 'IJG Income Provider Fund – B1'],
+					[{text:'Value of Units', bold: true }, 'N$ 26,000,000.00']
+				]
+			}
+		},
+		'Our banking details are as follows:',
+			{
+			style: 'tableExample',
+			table: {
+			     widths: ['50%', '50%'], // Adjust the widths as needed (e.g., 50% for each column)
+				body: [
+					[{text:'Name of Account Holder', bold: true }, '3569'],
+					[{text:'Bank', bold: true },'IJG Money Market Nominee (Pty) Ltd'],
+					[{text:'Branch Code', bold: true }, '2018/2985'],
+					[{text:'Account Number', bold: true }, 'IJG Income Provider Fund – B1'],
+					[{text:'Account Type', bold: true }, 'N$ 26,000,000.00']
+				]
+			}
+		},
+
+		'Yours sincerely',
+{
+			columns: [
+			    	{
+					width: '*',
+						text: 'H N Shikongo,', style: 'subheader',
+						margin: [0, 100, 0, 0],  // Add a bottom margin
+						        background: '#f0f0f0', // Replace with your desired background color in hex or any CSS-compatible color value
+				}
+		,
+				{
+					width: '*',
+						text: '25 September 2023,', style: 'subheader',
+						margin: [0, 100, 0, 0]  // Add a bottom margin
+				}
+			
+			
+			]
+		},
+		{
+    columns: [
+        {  width:'*',
+            text: 'Trustees: M Späth, R Gustav',
+            margin: [0, 50, 0, 0] , // Add a bottom margin
+             style: 'greyText',
+             
+        },
+        { width:'*',
+            text: '',
+            margin: [0, 50, 0, 0]  // Add a bottom margin
+        },
+        {    width:'200',
+            text: 'Company Registration Number: 2018/2985.',
+            margin: [0, 50, 0, 0] , // Add a bottom margin
+             style: 'greyText'
+        }
+    ]
+}
+
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	],
+	styles: {
+	    
+	    
+	      coloredText: {
+        background: '#f0f0f0', // Replace with your desired background color in hex or any CSS-compatible color value
+        color: 'black' // Set the text color to black for better contrast
+    },
+	      greyText: {
+        color: 'grey'
+    },
+		header: {
+			fontSize: 18,
+			bold: true,
+			margin: [0, 20, 0, 10]
+		},
+		subheader: {
+			fontSize: 16,
+			bold: true,
+			margin: [0, 10, 0, 5]
+		},
+		tableExample: {
+			margin: [0, 5, 0, 15],
+			
+		
+		},
+		tableHeader: {
+			bold: true,
+			fontSize: 13,
+			color: 'black'
+		}
+	},
+	defaultStyle: {
+		// alignment: 'justify'
+	}
+	
+}

@@ -1,0 +1,15 @@
+.grid {
+  * {
+    color: var(--color-text) !important;
+  }
+
+  .btn {
+    color: white !important;
+  }
+  .badge {
+    padding: 9px;
+    background: rgb(0, 87, 128);
+    border-radius: 9px;
+    color: white !important;
+  }
+}

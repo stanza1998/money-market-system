@@ -1,0 +1,32 @@
+/* Sample CSS */
+.kit-table {
+  width: 100%; /* Make the table take the full width of its container */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+.uk-table td, .uk-table th {
+  white-space: nowrap; /* Prevent text wrapping in cells */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Display ellipsis (...) for truncated text */
+}
+
+/* Adjust the styles based on your design requirements */
+
+
+//////
+/* styles.scss */
+
+/* Add margin and adjust width for better spacing */
+.kit-table .single-select-container {
+  margin: 5px; /* Adjust as needed */
+}
+
+/* Adjust width to prevent it from being cramped */
+.kit-table .single-select {
+  width: 100%; /* Adjust as needed */
+}
+
+/* Adjust the dropdown position to make it visible */
+.kit-table .single-select-dropdown {
+  top: 100%; /* Adjust as needed */
+}

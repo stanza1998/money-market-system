@@ -1,0 +1,29 @@
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+
+  /* Font color based on light or dark mode */
+  color: var(--color-dark);
+}
+
+
+  .info {
+    h1 {
+      margin: 0;
+      font-size: 1.5rem; /* Adjust font size as needed *
+      /* Font color based on light or dark mode */
+      color: var(--color-dark);
+    }
+      h2 {
+      margin: 0;
+      font-size: 1.5rem; /* Adjust font size as needed *
+      /* Font color based on light or dark mode */
+      color: var(--color-dark);
+    }
+  }

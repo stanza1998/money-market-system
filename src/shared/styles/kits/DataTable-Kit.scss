@@ -1,0 +1,106 @@
+.data-table {
+    label[for='entries'] {
+        grid-area: select;
+        font-family: 'Inter';
+        color: var(--color-text);
+        border: none !important;
+    }
+
+    select {
+        margin: 0 0.25rem;
+        border: none !important;
+        background-color: var(--card-background-color) !important;
+    }
+
+    input{
+        border: none !important;
+        background-color: var(--card-background-color) !important;
+    }
+
+    label[for='search'] {
+        grid-area: search;
+        font-family: 'Inter';
+        text-align: right;
+        color: var(--color-text);  
+    }
+
+    table {
+        grid-area: table;
+        border-collapse: collapse;
+
+        thead {
+            background-color: var(--card-background-color);
+            border: none !important;
+            th {
+                color: var(--color-text);
+                font-size: $font-size-sm;
+                text-transform: uppercase;
+            }
+        }
+
+        tbody {
+            max-height: 200px !important;
+            overflow-y: scroll !important;
+            tr {
+                border-bottom: 1.5px solid $grey-color !important;
+
+                td {
+                    color: var(--color-text);
+                    font-size: $font-size-sm;
+                }
+
+            }
+        }
+
+        td.empty {
+            text-align: center;
+        }
+
+        .sortable {
+            cursor: pointer;
+            padding-right: 1rem;
+            position: relative;
+            // border: 1px black solid;
+            font-style: 'Inter' !important;
+        }
+
+        .sortable::before,
+        .sortable::after {
+            position: absolute;
+            content: '';
+            width: 0.5rem;
+            height: 0.5rem;
+            right: 0.8rem;
+        }
+
+        th::before {
+            clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+            top: 0.8rem;
+        }
+
+        th::after {
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+            bottom: 0.8rem;
+        }
+
+        .ascending::before {
+            background-color: $grey-color;
+        }
+
+        .ascending::after {
+            background-color: $secondary-color;
+        }
+
+        .descending::before {
+            background-color: $secondary-color;
+        }
+
+        .descending::after {
+            background-color: $grey-color;
+        }
+
+        th {
+            font-size: $font-size-sm;
+        }
+    }
+}

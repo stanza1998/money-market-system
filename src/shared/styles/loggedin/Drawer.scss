@@ -1,0 +1,80 @@
+.drawer-content {
+  position: fixed;
+  z-index: 981;
+  width: $drawer-width;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 100%;
+  background: var(--drawer-background-color);
+  height: 700px;
+  top: 15%;
+  border-radius: $border-radius-lg;
+
+  .drawer-list {
+    padding: 50px 10px;
+
+    ul.main-list {
+      list-style: none;
+      margin: 0;
+
+      .list-item {
+        margin-bottom: 4px;
+        overflow: hidden;
+
+        &.uk-parent.uk-open {
+          .down-arrow {
+            position: absolute;
+            right: 5px;
+            transform: rotate(180deg);
+          }
+        }
+
+        .navlink {
+          position: relative;
+          padding: 0.5em;
+          font-size: $font-size;
+          transition: 0.3s ease-in-out all;
+          color: var(--color-text);
+          font-weight: $font-weight-semibold;
+
+          .down-arrow {
+            position: absolute;
+            right: 5px;
+            top: 8px;
+            transition: transform 0.3s ease-in-out;
+          }
+        }
+
+        .active {
+          background-color: var(--active-nav-background);
+          color: var(--active-nav-item);
+        }
+
+        .uk-nav-sub {
+          padding: 5px 0 5px 0px;
+
+          .navlink {
+            border-left: 4px solid transparent;
+          }
+
+          .active {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.uk-offcanvas-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -200px;
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px 20px;
+  background: var(--drawer-background-color);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

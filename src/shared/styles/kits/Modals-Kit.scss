@@ -1,0 +1,101 @@
+.custom-modal-style {
+  border-radius: $border-radius;
+
+  .uk-modal-body {
+    background-color: var(--background-color);
+    box-shadow: 02px 10px 11px rgba($success-color, 0.2);
+  }
+
+  .uk-modal-title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: var(--color-text);
+  }
+
+  .sub-heading {
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .uk-form-label {
+    font-size: $font-size;
+    color: var(--color-text);
+    font-weight: $font-weight-semibold;
+    margin-top: 10px;
+  }
+
+  // .uk-form-small:not(textarea):not([multiple]):not([size]) {
+  //   height: 40px !important;
+  // }
+
+  // .uk-input,
+  // .uk-select:not([multiple]):not([size]) {
+  //   height: 40px;
+  //   border-radius: 4px;
+  // }
+
+  .uk-modal-close-full {
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background: transparent;
+  }
+
+  input::placeholder {
+    color: #bbbbbb;
+    font-size: smaller;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .page-main-card {
+    border-radius: $border-radius-lg;
+    background-color: var(--main-card-background-color);
+
+    .in-title {
+      color: $primary-color;
+      font-size: $font-size-lg;
+    }
+
+    .page-item {
+      border-radius: $border-radius;
+      margin: 8px 0px;
+      background-color: var(--card-background-color);
+      transition: 0.3s ease-in-out all;
+      padding: 10px;
+
+      .status {
+        padding: 2px 8px;
+        color: var(--color-text);
+        border-radius: $border-radius;
+
+        &.pending {
+          background-color: grey;
+        }
+
+        &.approved {
+          background-color: rgb(150, 150, 229);
+        }
+      }
+
+      .span-label {
+        display: block;
+        font-size: $font-size-xs;
+        color: var(--color-text);
+        text-transform: uppercase;
+        margin: 0;
+        transition: 0.3s ease-in-out all;
+        font-weight: $font-weight-bold;
+      }
+
+      .name {
+        color: var(--color-text);
+      }
+    }
+  }
+}

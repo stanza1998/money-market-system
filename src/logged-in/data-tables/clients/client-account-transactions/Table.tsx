@@ -1,0 +1,24 @@
+import { TableBody } from './TableBody';
+import { TableHeader } from './TableHeader';
+import { HandleSorting, Header, Row } from '../../../../shared/components/react-ts-datatable/DataTableTypes';
+
+interface TableProps {
+  headers: Header[];
+  rows: Row[];
+  isFiltered: boolean;
+  handleSorting: HandleSorting;
+}
+
+export const Table = ({
+  headers,
+  rows,
+  isFiltered,
+  handleSorting,
+}: TableProps) => {
+  return (
+    <table className="uk-table uk-table-small uk-table-divider kit-table">
+      <TableHeader headers={headers} handleSorting={handleSorting} />
+      <TableBody rows={rows} length={headers.length} isFiltered={isFiltered} />
+    </table>
+  );
+};

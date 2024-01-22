@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Batch>
+    <CustomerBatchRef>IJGTESTBATCH</CustomerBatchRef>
+    <Instruction>
+        <CustomerInstructionRef>IJGTESTINST</CustomerInstructionRef>
+        <InstructionRef>IJGTESTPMNT</InstructionRef>
+        <RequiredExecutionDate>2024-01-16</RequiredExecutionDate>
+
+        <ProcessingOption>
+            <processingName>ServiceLevel</processingName>
+            <processingValue>Normal</processingValue>
+        </ProcessingOption>
+        <ChargesBearer>OUR</ChargesBearer>
+
+        <Transaction>
+            <CustomerTransactionRef>CustTransRef1</CustomerTransactionRef>
+            <TransactionType>D</TransactionType>
+
+            <CounterPartyRef>CounterPartyReference</CounterPartyRef>
+
+            <Account>
+                <AccountNumber>60003108928</AccountNumber>
+            </Account>
+
+            <InstructedAmount>10.00000</InstructedAmount>
+            <TransactionServiceLevel>Normal</TransactionServiceLevel>
+
+            <TransferCurrency>NAM</TransferCurrency>
+
+            <CounterParty>
+                <PostalAddress>
+                    <AddressLine>4th Floor, 1@Steps C/O Grove , Chasie Street, Windhoek</AddressLine>
+                    <Country>Namibia</Country>
+                </PostalAddress>
+            </CounterParty>
+        </Transaction>
+    </Instruction>
+</Batch>
+</Document>
+
+
+            
+
+
+ 
+      
+            
+  

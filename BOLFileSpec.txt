@@ -1,0 +1,62 @@
+Header Record(144)
+    RecordIdentifier(2):"SB"
+    ActionDate(8):"20240118"
+    BatchDescription(11):"IJGPayments"
+    Filler(103):""   
+    
+    String = [RecordIdentifier][Date]IJGPayments                                                                                                    "
+
+Detail Record(211)
+    RecordIdentifier(2):"SD"
+    SubBatchNumber(3):"001"
+    TransactionReferenceNumber(10):"IJG[]"
+    DebtorCreditorIndicator(1):"" 
+    BranchNumber(6):""
+    AccountNumber(13):""
+    AccountName(30):""
+    DebtorCreditorCode(16):""
+    Amount(15):""
+    StatementReference(30):""
+    RTGSIndicator(1):""
+    CDINumber(13):""
+    Filler(3):""
+    PayAlertDestinationType(1):""
+    PayAlertDestination(62):""
+    ClassOfEntry(207):""
+    TrackingPeriod(2):""
+
+    String = [RecordIdentifier][SubBatchNumber][TransactionReferenceNumber][DebtorCreditorIndicator][BranchNumber][AccountNumber][AccountName][DebtorCreditorCode][Amount][StatementReference][RTGSIndicator][CDINumber][Filler][PayAlertDestinationType][PayAlertDestinationType][ClassOfEntry]{TrackingPeriod}
+
+Contra Record(157)
+    RecordIdentifier(2):"SC"
+    SubBatchNumber(3):"001"
+    SubBatchDescription(10):"IJG[]"
+    DebtorCreditorIndicator(1):"" 
+    BranchNumber(6):""
+    AccountNumber(13):""
+    AccountName(30):""
+    HashTotalIndicator(1):""
+    HashTotal(12):""
+    Filler(28):""
+
+Trailer Record(144)
+    RecordIdentifier(2):""
+    TotalDebitRecords(7):""
+    TotalCreditRecords(7):""
+    TotalContraRecords(3):""
+    TotalAmountDebitRecords(15):""
+    TotalAmountCreditRecords(15):""
+    Filler(94):""
+
+
+
+
+
+
+
+
+
+
+
+
+

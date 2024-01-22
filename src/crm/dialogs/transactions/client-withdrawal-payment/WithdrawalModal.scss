@@ -1,0 +1,70 @@
+// /* Add these styles to your CSS or SCSS file */
+// /* Add this to your existing CSS */
+// // .custom-modal {
+// //   background-color: #fff; /* White background color */
+// //   padding: 20px;
+// //   box-shadow: var(--box-shadow);
+// //   color: var(--color-dark);
+// // }
+// .clive {
+//   .view-modal {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 20px;
+//     background-color: var(--color-white);
+//     box-shadow: var(--box-shadow);
+
+//     /* Font color based on light or dark mode */
+//     color: var(--color-dark);
+//   }
+
+//   .view-modal.dark-mode {
+//     background-color: var(--color-dark);
+//     color: var(--color-white);
+//     /* Add other styles for dark mode if needed */
+//   }
+
+//   .view-modal {
+//     width: 100%;
+//     background-color: var(--color-white);
+//   }
+
+//   .custom-modal-style {
+//     max-width: none; /* Allow the modal to take full width */
+//   }
+
+//   .uk-modal-dialog {
+//     max-width: 100%;
+//     margin: 0;
+//   }
+
+//   .uk-width-1-2 {
+//     width: 100%; /* Adjust the width for smaller screens */
+//   }
+
+//   .dialog-content {
+//     padding: 20px;
+//     box-sizing: border-box;
+//   }
+
+//   /* Media Queries for mobile responsiveness */
+//   @media screen and (min-width: 768px) {
+//     .uk-width-1-2 {
+//       width: 48%; /* Adjust the width for medium-sized screens */
+//     }
+//   }
+
+//   @media screen and (min-width: 992px) {
+//     .uk-width-1-2 {
+//       width: 45%; /* Adjust the width for larger screens */
+//     }
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     .uk-width-1-2 {
+//       width: 40%; /* Adjust the width for extra-large screens */
+//     }
+//   }
+// }

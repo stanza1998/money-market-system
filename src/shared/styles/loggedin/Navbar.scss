@@ -1,0 +1,113 @@
+.ijg-navbar {
+  background-color: var(--color-page-background);
+  height: 70px;
+
+  .navbar-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-weight: $font-weight-semibold;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    color: var(--color-text);
+
+    .icon {
+      transition: all 0.3s ease-in-out;
+
+      span {
+        width: 30px;
+      }
+    }
+
+    p {
+      font-size: $font-size-md;
+      width: clamp(calc(100% - 30px), 300px, 100%);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .icon {
+        margin-right: 5px;
+      }
+    }
+
+  }
+
+  .navbar-right {
+    margin-right: 10px;
+  }
+
+  .avartar-li-item {
+    display: flex;
+    align-items: center;
+
+    .avartar-username {
+      font-size: $font-size-sm;
+      color: var(--color-text);
+      line-height: 1;
+      margin: 0 10px 0 20px;
+
+      .name {
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+      }
+
+      .job-title {
+        font-size: $font-size-xs;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+        width: 200px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+    .user-avartar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: $white-color;
+      border: 1px solid $grey-color;
+      cursor: pointer;
+
+      .avartar-initials {
+        color: $grey-color;
+        font-weight: $font-weight-semibold;
+        margin: 0;
+      }
+    }
+  }
+
+  .theme-btn {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background-color: $primary-btn;
+    width: 60px;
+    height: 28px;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      box-shadow: 0 10px 14px rgba($primary-btn, 0.4);
+    }
+  }
+}
+
+@media screen and (min-width: 967px) {
+  .navbar-right {
+    margin-right: 4em !important;
+  }
+}

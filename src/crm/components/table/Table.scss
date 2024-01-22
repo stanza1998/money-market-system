@@ -1,0 +1,108 @@
+.recent-orders {
+  margin-top: 1.3rem;
+}
+
+.recent-orders h2 {
+  margin-bottom: 0.8rem;
+}
+
+.recent-orders table {
+  background-color: var(--color-white);
+  width: 100%;
+  padding: var(--card-padding);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  transition: all 0.3s ease;
+}
+
+.recent-orders table:hover {
+  box-shadow: none;
+}
+
+
+table {
+  thead {
+    // Remove background color for th elements in the new-class
+    background-color: transparent;
+    color: var(--color-dark-variant);
+
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+  }
+}
+
+table tbody td {
+  height: 2.8rem;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-dark-variant);
+}
+
+table tbody tr:last-child td {
+  border: none;
+}
+
+.recent-orders a {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+    grid-template-columns: 7rem auto 23rem;
+  }
+
+  .recent-orders {
+    width: 94%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0 0 0.8rem;
+  }
+
+  .recent-orders table {
+    width: 83vw;
+  }
+
+  table thead tr th:last-child,
+  table thead tr th:first-child {
+    display: none;
+  }
+
+  table tbody tr td:last-child,
+  table tbody tr td:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 0 var(--padding-1);
+  }
+
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
+  }
+
+  main .new-users .user-list .user {
+    flex-basis: 35%;
+  }
+
+  main .recent-orders {
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+
+  main .recent-orders table {
+    width: 100%;
+    margin: 0;
+  }
+}

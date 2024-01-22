@@ -1,0 +1,433 @@
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .title {
+        font-size: $font-size-xxxl;
+        color: var(--color-text);
+        font-weight: $font-weight-xtra-bold;
+        text-transform: uppercase;
+    }
+
+    .controls {
+        display: flex;
+
+        @media screen and (max-width: 430px) {
+            display: flex;
+            justify-content: space-between;
+
+            &.mg-top {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.main-title-small {
+    color: var(--color-text);
+    font-weight: 900;
+    font-size: $font-size-lg;
+    text-transform: uppercase;
+}
+
+.main-title-lg {
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: $font-size-xl;
+    text-transform: uppercase;
+}
+
+.table-container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    max-width: 100%;
+    /* Set a maximum width to ensure responsiveness */
+}
+
+/* Fix the first column */
+/* .kit-table */
+
+.purchase-page-table {
+    th,td {
+        border: 0.5px --color-texts solid !important;
+    }
+}
+
+.desk-dealing {
+    color: var(--color-text);
+}
+
+.purchase-page-table {
+    thead {
+        tr> :first-child {
+            position: sticky;
+            left: 0;
+            z-index: 1;
+            background-color: var(--card-background-color);
+            height: 10px;
+        }
+    }
+
+    tbody {
+        tr> :first-child {
+            position: sticky;
+            left: 0;
+            z-index: 1;
+            background-color: var(--card-background-color);
+            /* Set the desired background color for the fixed column */
+        }
+    }
+}
+
+// .purchase-page-table .single-select {
+//    // background-color: var(--card-background-color) !important;
+//     // background-color: red !important;
+//     position: relative !important;
+//     z-index: 2 !important;/* Set a higher z-index to make it appear on top of the background */
+// }
+
+.icon-lg {
+    font-size: $font-size-xxxl;
+}
+
+.selector {
+    font-size: $font-size-lg;
+}
+
+input[type='text'] {
+    border: none !important;
+}
+
+input[type='number'] {
+    border: none !important;
+}
+
+input[type='date'] {
+    border: none !important;
+}
+
+textarea {
+    border: none !important;
+}
+
+input .single-select {
+    border: none !important;
+}
+
+select {
+    border: none !important;
+}
+
+form {
+    border-radius: $border-radius-lg;
+
+    .required:after {
+        content: "*";
+        color: $danger-btn;
+        font-size: $font-size;
+        margin-left: 2px;
+    }
+}
+
+.text-danger {
+    color: $danger-btn !important;
+}
+
+.empty-error {
+    p {
+        color: var(--color-text);
+    }
+}
+
+.auto-save {
+    &__outlined {
+        border: 2px solid $primary-color !important;
+        background-color: $white-color !important;
+        color: $black-color !important;
+    }
+
+    &__input {
+        background-color: transparent;
+        outline: none;
+        transition: 0.3s border ease, 0.3s background-color ease,
+            0.3s min-width ease, 0.3s color ease;
+        text-overflow: ellipsis;
+        padding: 2px 5px !important;
+        min-height: auto !important;
+
+        border: 1px solid $primary-color;
+        background-color: $white-color;
+        color: $black-color;
+
+        &:focus,
+        &:hover,
+        &:active {
+            border: 2px solid $primary-color;
+        }
+
+        &:disabled {
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: inherit;
+            cursor: not-allowed;
+
+            &:hover,
+            &:focus,
+            &:active {
+                border: 1px solid $grey-color;
+                background-color: $muted-color;
+                color: $black-color;
+            }
+        }
+    }
+}
+
+.select-input {
+    position: relative;
+    background-color: var(--card-background-color) !important;
+
+    &:active,
+    &--expanded {
+        border-color: $primary-color !important;
+    }
+
+    &__value {
+        position: relative;
+
+        p {
+            font-size: $font-size;
+            font-weight: $font-weight;
+            line-height: 2.6;
+            margin: 0;
+        }
+
+        .icon {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            span {
+                font-size: 8px;
+                line-height: 1;
+            }
+        }
+    }
+
+    &__dropdown-option {
+        padding: 0.5rem 0.5rem;
+        border-bottom: $muted-color solid 0.5px;
+        cursor: pointer;
+
+        .option-label {
+            font-size: $font-size;
+            font-weight: $font-weight-semibold;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .option-description {
+            font-size: $font-size-sm;
+            font-weight: $font-weight;
+            color: $grey-color;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        &:hover {
+            background-color: $hover-color;
+        }
+
+        &-list {
+            position: absolute;
+            font-size: $font-size;
+            font-weight: $font-weight;
+            top: calc(100% + 5px);
+            left: 0;
+            width: 100%;
+            background-color: $white-color;
+            box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1);
+            // border: 1px solid $muted-color;
+            z-index: 1;
+
+            &--expanded {
+                display: block;
+            }
+
+            &--hidden {
+                display: none;
+            }
+        }
+    }
+}
+
+.number-input {
+    position: relative;
+
+    .input-error {
+        font-size: 0.6rem;
+        font-weight: 500;
+        letter-spacing: 0.8;
+        color: $danger-color;
+    }
+}
+
+.field-info {
+    display: inline-block;
+    position: relative;
+
+    .icon {
+        color: $grey-color !important;
+        transition: 0.3s all ease;
+        cursor: pointer;
+
+        &:hover {
+            color: $black-color !important;
+        }
+    }
+
+    &:hover {
+        .description {
+            display: block;
+        }
+    }
+
+    .description {
+        &::before {
+            content: "Description";
+            display: block;
+            font-size: $font-size-xs;
+            font-weight: $font-weight-semibold;
+            color: $grey-color;
+            text-transform: uppercase;
+        }
+
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        margin: 0;
+        font-size: $font-size-sm;
+        background-color: $hover-color;
+        color: $grey-color;
+        padding: 10px;
+        width: clamp(100px, 50vmin, 350px);
+        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.1);
+        pointer-events: none;
+    }
+
+    &.align-center .description {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &.align-right .description {
+        right: 0%;
+    }
+}
+
+.error-boundary {
+    .title {
+        display: inline;
+        font-size: $font-size-lg;
+    }
+
+    button {
+        display: inline;
+        color: $primary-color;
+        font-size: $font-size-md;
+        font-weight: $font-weight-semibold;
+        padding: 5px 10px;
+        margin-left: 20px;
+        transition: 0.3s all ease;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+
+.file-item {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        .controls {
+            display: block !important;
+        }
+    }
+
+    .controls {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        display: none !important;
+        background-color: $white-color;
+        padding: 0.5em 1em;
+
+        button {
+            padding: 0;
+            outline: none;
+            border: 0;
+            background-color: transparent;
+            color: $secondary-btn;
+            transition: 0.3s all ease-out;
+
+            &:hover {
+                cursor: pointer;
+                color: $secondary-btn;
+            }
+
+            &.delete {
+                color: $danger-btn;
+
+                &:hover {
+                    color: $danger-btn;
+                }
+            }
+        }
+    }
+
+    .upload-progress-bar {
+        position: absolute;
+        bottom: 0;
+        height: 6px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: $grey-color;
+        border-radius: 3px;
+
+        .progress {
+            position: absolute;
+            background-color: $secondary-color;
+            height: 100%;
+            width: 40%;
+            animation: upload 1s ease infinite;
+        }
+    }
+}
+
+@keyframes upload {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}

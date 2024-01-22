@@ -1,0 +1,17 @@
+.kit-table {
+  th {
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    color: var(--color-text);
+  }
+
+  .row {
+    // display: flex;
+    // justify-content: space-between;
+
+    td {
+      font-size: $font-size-sm;
+    }
+  }
+}

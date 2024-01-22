@@ -1,0 +1,93 @@
+@import "./shared/styles/Variables.scss";
+@import "./shared/styles/Main.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: "Poppins";
+}
+html, body {
+  height: 100%;
+  overflow-y: auto; /* or overflow-y: auto; */
+}
+
+body {
+  border-color:red;
+  border-width: 5px;
+  font-size: $font-size;
+  // margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-page-background);
+}
+
+// body ::-webkit-scrollbar {
+//   display: none;
+// }
+// html ::-webkit-scrollbar {
+//   display: none;
+// }
+
+// all form fields
+.uk-input,
+.uk-select:not([multiple]):not([size]) {
+  height: 40px !important;
+  border-radius: 4px;
+  background-color: var(--input-background-color);
+  color: var(--color-text);
+}
+
+.uk-select:not([multiple]):not([size]) option {
+  color: var(--color-text);
+}
+
+.uk-form-small:not(textarea):not([multiple]):not([size]) {
+  height: 40px !important;
+}
+
+.uk-input:disabled,
+.uk-select:disabled,
+.uk-textarea:disabled {
+  background-color: var(--color-page-background);
+  color: var(--color-text);
+}
+
+:root {
+  --color-page-background: #{$body-background-light};
+  --color-text: #{$text-color-blue};
+  --color-text-blue: #{$text-color-blue};
+  --background-color: #{$background-color-light};
+  --card-background-color: #{$card-background-color-light};
+  --main-card-background-color: #{$white-color};
+  --input-background-color: #{$white-color};
+  --button-background-color: #{$primary-light};
+
+  // drawer
+  --drawer-background-color: #{$white-color};
+  --active-nav-background: #{$background-color-dark};
+  --active-nav-item: #{$white-color};
+  --expanded-parent-nav-item: #{$white-color};
+}
+
+.dark {
+  --color-page-background: #{$body-background-dark};
+  --color-text: #{$white-color};
+  --color-text-blue: #{$text-color-blue};
+  --background-color: #{$background-color-dark};
+  --card-background-color: #{$card-background-color-dark};
+  --main-card-background-color: #{$background-color-dark};
+  --input-background-color: #{$card-background-color-dark};
+  --button-background-color: #{primary-dark};
+
+  // drawer
+  --drawer-background-color: #{$background-color-dark};
+  --active-nav-background: #{$background-color-light};
+  --active-nav-item: #{$text-color-blue};
+  --expanded-parent-nav-item: #{$primary-color};
+}

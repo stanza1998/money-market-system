@@ -1,0 +1,119 @@
+@import "./logout/LoggedOut.scss";
+@import "./kits/Kit.scss";
+@import "./loggedin/Drawer.scss";
+@import "./loggedin/MainLayout.scss";
+@import "./loggedin/Navbar.scss";
+
+// instruments
+@import "./instruments/Instruments.scss";
+@import "./purchases/Purchases.scss";
+
+// settings
+@import"./settings/Settings.scss";
+
+// auto save, field info, error boundary, number input
+@import "./Common.scss";
+
+
+* {
+    font-family: 'Inter';
+}
+
+.page {
+    min-height: 100vh;
+    // max-height: 150vh;
+    margin-top: 11px;
+    margin-bottom: 4rem;
+    overflow: auto; 
+    .sticky-top {
+        hr {
+            background-color: var(--color-text) !important;
+            height: 2px;
+        }
+
+        .page-title {
+            font-size: $font-size-xxxl;
+            color: var(--color-text);
+            font-weight: $font-weight-xtra-bold;
+            text-transform: uppercase;
+        }
+    }
+
+    .page-main-card {
+        border-radius: $border-radius-lg;
+        background-color: var(--main-card-background-color);
+        padding: 18px;
+
+        .page-item {
+            border-radius: $border-radius;
+            margin: 8px 0px;
+            background-color: $white-color;
+            transition: 0.3s ease-in-out all;
+            padding: 10px;
+
+            &:hover {
+                background-color: $hover-color;
+            }
+
+            .span-label {
+                display: block;
+                font-size: $font-size-xs;
+                color: $primary-color;
+                text-transform: uppercase;
+                margin: 0;
+                line-height: 1;
+                transition: 0.3s ease-in-out all;
+                font-weight: $font-weight-bold;
+            }
+        }
+        .icon-container {
+            font-size: 24px; 
+          }
+          .total {
+            font-size: 18px; 
+            font-weight: bold; 
+          }
+          
+    }
+
+    .instrument-card {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        border-radius: $border-radius-lg;
+        background-color: var(--card-background-color);
+        button{
+            background-color: $primary-color;
+        }
+
+        .in-title {
+            font-size: $font-size-lg;
+            color: var(--color-text);
+            font-weight: $font-weight-xtra-bold;
+            text-transform: uppercase;
+        }
+
+        .in-description {
+            color: $primary-color;
+        }
+
+        .in-card-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    }
+    
+}
+
+.page ::-webkit-scrollbar {
+    display: none;
+  }
+
+table {
+    tbody {
+        max-height: 200px !important;
+        overflow-y: scroll !important;
+    }
+}

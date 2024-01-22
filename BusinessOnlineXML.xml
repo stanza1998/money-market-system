@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Batch>
+        <CustomerBatchRef>
+
+        </CustomerBatchRef>
+        <Instruction>
+            <CustomerInstructionRef>CustInstrRef</CustomerInstructionRef>
+            <RequiredExecutionDate>2015-11-26</RequiredExecutionDate>
+            <ProcessingOption>
+                <processingName>ServiceLevel</processingName>
+                <processingValue>Normal</processingValue>
+            </ProcessingOption>
+            <ChargesBearer>SHA</ChargesBearer>
+
+            <Transaction>
+                <CustomerTransactionRef>CustTransRef1</CustomerTransactionRef>
+                <TransactionType>D</TransactionType>
+                <InstructedAmount>5000.00000</InstructedAmount>
+                <TransferCurrency>NAM</TransferCurrency>
+                <PostalAddress>
+                    <AddressLine></AddressLine>
+                    <Country></Country>
+                </PostalAddress>
+                
+                <CountryCode></CountryCode>
+                <BIC></BIC>
+                <BranchSortCode></BranchSortCode>
+            </Transaction>
+        </Instruction>
+    </Batch>
+</Document>
